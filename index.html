@@ -8,19 +8,16 @@
   <title>Word Puzzle</title>
 </head>
 <body>
-<form id="formPuzzle">
-  <h1>Puzzle Creator</h1>
-    <div class="container">
-        <input type="text" id="puzzle1"> Write a phrase!</input>
+  <div class="container">
+    <h1>Puzzle Creator</h1>
+    <form id="formPuzzle">
+      <div class="form-group">
+        <label for="puzzle1">Write a phase:</label>
+        <input id="puzzle1" class="form-control" type="text">
       <div>
-        <button type="submit" class="btn">Submit!</button>
-      </div>
-    </div>
-  <div>
-    <span class="answer" id="XXXXXX"></span>
+    <button type="submit" class="btn">Submit!</button>
+  </form>
   </div>
-</form>
-
-
+  <div id="puzzleResult" class="answer"></div>
 </body>
 </html>

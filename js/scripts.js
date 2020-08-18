@@ -3,9 +3,13 @@ $(document).ready(function() {
   $("#formPuzzle").submit(function(event) {
     event.preventDefault();
     let puzzleResult = $("#puzzle1").val();
-let
-    string = puzzleResult.replace( /[aeiouAEIOU]/g, '-' );
-    console.log(string);
 
+  let code1 = puzzleResult.replace( /[aeiouAEIOU]/g, '-' );
+  
+  console.log(code1)
+  
+      $("#puzzleResult").append(code1);
+
+       $("#puzzle1").hide();
   });
-});
+  });
